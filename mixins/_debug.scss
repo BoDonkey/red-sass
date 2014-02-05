@@ -1,0 +1,19 @@
+@mixin debug {
+	$sel : '';
+	@for $i from 0 through 19 {
+		$sel : $sel + '* ';
+		$hue : ($i * 18deg);
+
+		#{$sel} {
+			outline: 1px solid hsl($hue, 100%, 50%);
+
+			&:before {
+				outline: 1px dotted hsl($hue, 100%, 25%);
+			}
+
+			&:after {
+				outline: 1px dashed hsl($hue, 100%, 75%);
+			}
+		}
+	}
+}

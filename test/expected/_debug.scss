@@ -1,0 +1,120 @@
+.debug * {
+  outline: 1px solid red; }
+.debug *:before {
+  outline: 1px dotted #800000; }
+.debug *:after {
+  outline: 1px dashed #ff8080; }
+.debug * * {
+  outline: 1px solid #ff4d00; }
+.debug * *:before {
+  outline: 1px dotted #802600; }
+.debug * *:after {
+  outline: 1px dashed #ffa680; }
+.debug * * * {
+  outline: 1px solid #ff9900; }
+.debug * * *:before {
+  outline: 1px dotted #804d00; }
+.debug * * *:after {
+  outline: 1px dashed #ffcc80; }
+.debug * * * * {
+  outline: 1px solid #ffe500; }
+.debug * * * *:before {
+  outline: 1px dotted #807300; }
+.debug * * * *:after {
+  outline: 1px dashed #fff280; }
+.debug * * * * * {
+  outline: 1px solid #ccff00; }
+.debug * * * * *:before {
+  outline: 1px dotted #668000; }
+.debug * * * * *:after {
+  outline: 1px dashed #e5ff80; }
+.debug * * * * * * {
+  outline: 1px solid #80ff00; }
+.debug * * * * * *:before {
+  outline: 1px dotted #408000; }
+.debug * * * * * *:after {
+  outline: 1px dashed #bfff80; }
+.debug * * * * * * * {
+  outline: 1px solid #33ff00; }
+.debug * * * * * * *:before {
+  outline: 1px dotted #198000; }
+.debug * * * * * * *:after {
+  outline: 1px dashed #99ff80; }
+.debug * * * * * * * * {
+  outline: 1px solid #00ff19; }
+.debug * * * * * * * *:before {
+  outline: 1px dotted #00800d; }
+.debug * * * * * * * *:after {
+  outline: 1px dashed #80ff8c; }
+.debug * * * * * * * * * {
+  outline: 1px solid #00ff66; }
+.debug * * * * * * * * *:before {
+  outline: 1px dotted #008033; }
+.debug * * * * * * * * *:after {
+  outline: 1px dashed #80ffb3; }
+.debug * * * * * * * * * * {
+  outline: 1px solid #00ffb3; }
+.debug * * * * * * * * * *:before {
+  outline: 1px dotted #008059; }
+.debug * * * * * * * * * *:after {
+  outline: 1px dashed #80ffd9; }
+.debug * * * * * * * * * * * {
+  outline: 1px solid #00ffff; }
+.debug * * * * * * * * * * *:before {
+  outline: 1px dotted #007f80; }
+.debug * * * * * * * * * * *:after {
+  outline: 1px dashed #80ffff; }
+.debug * * * * * * * * * * * * {
+  outline: 1px solid #00b2ff; }
+.debug * * * * * * * * * * * *:before {
+  outline: 1px dotted #005980; }
+.debug * * * * * * * * * * * *:after {
+  outline: 1px dashed #80d9ff; }
+.debug * * * * * * * * * * * * * {
+  outline: 1px solid #0066ff; }
+.debug * * * * * * * * * * * * *:before {
+  outline: 1px dotted #003380; }
+.debug * * * * * * * * * * * * *:after {
+  outline: 1px dashed #80b3ff; }
+.debug * * * * * * * * * * * * * * {
+  outline: 1px solid #0019ff; }
+.debug * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #000d80; }
+.debug * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #808cff; }
+.debug * * * * * * * * * * * * * * * {
+  outline: 1px solid #3300ff; }
+.debug * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #190080; }
+.debug * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #9980ff; }
+.debug * * * * * * * * * * * * * * * * {
+  outline: 1px solid #7f00ff; }
+.debug * * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #400080; }
+.debug * * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #bf80ff; }
+.debug * * * * * * * * * * * * * * * * * {
+  outline: 1px solid #cc00ff; }
+.debug * * * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #660080; }
+.debug * * * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #e580ff; }
+.debug * * * * * * * * * * * * * * * * * * {
+  outline: 1px solid #ff00e6; }
+.debug * * * * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #800073; }
+.debug * * * * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #ff80f2; }
+.debug * * * * * * * * * * * * * * * * * * * {
+  outline: 1px solid #ff0099; }
+.debug * * * * * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #80004c; }
+.debug * * * * * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #ff80cc; }
+.debug * * * * * * * * * * * * * * * * * * * * {
+  outline: 1px solid #ff004c; }
+.debug * * * * * * * * * * * * * * * * * * * *:before {
+  outline: 1px dotted #800026; }
+.debug * * * * * * * * * * * * * * * * * * * *:after {
+  outline: 1px dashed #ff80a6; }

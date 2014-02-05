@@ -1,0 +1,14 @@
+{
+	"name": "red-sass",
+	"description": "RED Interactive's collection of Sass mixins and helpers.",
+	"version": "0.1.0",
+	"ignore": [
+		"node_modules",
+		"test",
+		".editorconfig",
+		".gitignore",
+		".jshintrc",
+		".travis.yml",
+		"package.json"
+	]
+}

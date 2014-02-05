@@ -1,0 +1,9 @@
+@import "red-sass";
+
+.no-args {
+	@include ellipsis;
+}
+
+.px-30 {
+	@include ellipsis(30px);
+}

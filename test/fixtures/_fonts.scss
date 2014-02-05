@@ -1,0 +1,41 @@
+@import "red-sass";
+
+.helvetica {
+	@include helvetica;
+}
+
+.helvetica-inline {
+	font: 16px/1 $helvetica;
+}
+
+.georgia {
+	@include georgia;
+}
+
+.georgia-inline {
+	font: 16px/1 $georgia;
+}
+
+.lucida-grande {
+	@include lucida-grande;
+}
+
+.lucida-grande-inline {
+	font: 16px/1 $lucida-grande;
+}
+
+.monospace {
+	@include monospace;
+}
+
+.monospace-inline {
+	font: 16px/1 $monospace;
+}
+
+.verdana {
+	@include verdana;
+}
+
+.verdana-inline {
+	font: 16px/1 $verdana;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "red-sass",
+  "description": "RED Interactive's collection of Sass mixins and helpers.",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "glob": "~3.2.8",
+    "node-sass": "~0.8.1",
+    "mocha": "~1.17.1"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  }
+}

@@ -1,0 +1,5 @@
+.microfix-placeholder:before, .microfix-placeholder:after {
+  content: "";
+  display: table; }
+.microfix-placeholder:after {
+  clear: both; }

@@ -1,0 +1,105 @@
+// These are some helpers for absolute, relative, or fixed positioning.
+// Kinda based on https://gist.github.com/jpweeks/6733356.
+
+// @include position($pos, $coords);
+// @include absolute($coords);
+// @include relative($coords);
+// @include fixed($coords);
+
+// `fixed`, `absolute`, and `relative` are just shorter aliases
+// to their `position(relative, $coords)` counterpart.
+
+
+// @include absolute(10px);
+
+// outputs
+
+// position: absolute;
+// top: 10px;
+// right: 10px;
+// bottom: 10px;
+// left: 10px;
+
+// The 1-4 values match the behavior of defining padding and margins in clockwise order.
+
+// @include position(fixed, 10px 20px 30px 40px);
+
+// outputs
+
+// position: fixed;
+// top: 10px;
+// right: 20px;
+// bottom: 30px;
+// left: 40px;
+
+// If you leave off the fourth value, the left value uses the right value.
+
+// @include fixed(10px 20px 30px);
+
+// outputs
+
+// position: fixed;
+// top: 10px;
+// right: 20px;
+// bottom: 30px;
+// left: 20px;
+
+// If you leave off the third value, the bottom value uses the top value.
+
+// @include relative(10px 20px);
+
+// outputs
+
+// position: relative;
+// top: 10px;
+// right: 20px;
+// bottom: 10px;
+// left: 20px;
+
+
+@mixin position($pos: relative, $coords: 0 0 0 0) {
+	$length: length($coords);
+
+	$top : 0;
+	$left : 0;
+	$right : 0;
+	$bottom : 0;
+
+	@if $length > 0 {
+		$top: nth($coords, 1);
+		$left : $top;
+		$right : $top;
+		$bottom : $top;
+	}
+
+	@if $length > 1 {
+		$right : nth($coords, 2);
+		$left : $right;
+	}
+
+	@if $length > 2 {
+		$bottom : nth($coords, 3);
+	}
+
+	@if $length > 3 {
+		$left : nth($coords, 4);
+	}
+
+	position: $pos;
+	top: $top;
+	left: $left;
+	right: $right;
+	bottom: $bottom;
+}
+
+@mixin absolute($coords) {
+	@include position(absolute, $coords);
+}
+
+@mixin relative($coords) {
+	@include position(relative, $coords);
+}
+
+@mixin fixed($coords) {
+	@include position(fixed, $coords);
+}

@@ -1,0 +1,29 @@
+@import "red-sass";
+
+.position-relative-1 {
+	@include position(relative, 1px);
+}
+
+.position-absolute-2 {
+	@include position(absolute, 1px 2px);
+}
+
+.position-fixed-3 {
+	@include position(fixed, 1px 2px 3px);
+}
+
+.position-sticky-4 {
+	@include position(sticky, 1px 2px 3px 4px);
+}
+
+.relative-4 {
+	@include relative(1px 2px 3px 4px);
+}
+
+.absolute-4 {
+	@include absolute(1px 2px 3px 4px);
+}
+
+.fixed-4 {
+	@include fixed(1px 2px 3px 4px);
+}

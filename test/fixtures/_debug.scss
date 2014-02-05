@@ -1,0 +1,5 @@
+@import "red-sass";
+
+.debug {
+	@include debug;
+}
