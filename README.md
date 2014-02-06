@@ -16,7 +16,7 @@ bower install red-sass --save
 Import RED-Sass into your `scss` files.
 
 ```scss
-@import "red-sass";
+@import "path/to/red-sass";
 ```
 
 ## Mixins
