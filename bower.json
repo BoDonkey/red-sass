@@ -1,7 +1,15 @@
 {
 	"name": "red-sass",
-	"description": "RED Interactive's collection of Sass mixins and helpers.",
 	"version": "0.1.0",
+	"description": "RED Interactive's collection of Sass mixins and helpers.",
+	"keywords": [
+		"sass",
+		"scss",
+		"reset",
+		"red"
+	],
+	"main": "_red-sass.scss",
+	"license": "MIT",
 	"ignore": [
 		"node_modules",
 		"test",
@@ -9,6 +17,7 @@
 		".gitignore",
 		".jshintrc",
 		".travis.yml",
+		"contributing.md",
 		"package.json"
 	]
 }
