@@ -1,7 +1,4 @@
-# RED-Sass [![Build Status][travis-badge-url]][travis-url]
-
-[travis-url]: https://travis-ci.org/ff0000/red-sass
-[travis-badge-url]: https://travis-ci.org/ff0000/red-sass.png
+# RED-Sass [![Build Status](https://travis-ci.org/ff0000/red-sass.png?branch=master)](https://travis-ci.org/ff0000/red-sass)
 
 A collection of Sass mixins and helpers
 
