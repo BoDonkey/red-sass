@@ -1,8 +1,8 @@
-$helvetica     : "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia       : Georgia, Cambria, "Times New Roman", Times, serif;
-$lucida-grande : "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
-$monospace     : "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
-$verdana       : Verdana, Geneva, sans-serif;
+$helvetica     : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$georgia       : Georgia, Cambria, "Times New Roman", Times, serif !default;
+$lucida-grande : "Lucida Grande", Tahoma, Verdana, Arial, sans-serif !default;
+$monospace     : "Bitstream Vera Sans Mono", Consolas, Courier, monospace !default;
+$verdana       : Verdana, Geneva, sans-serif !default;
 
 @mixin helvetica     { font-family: $helvetica; }
 @mixin georgia       { font-family: $georgia; }
