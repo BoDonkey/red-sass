@@ -1,0 +1,67 @@
+@mixin width-under($width) {
+	@media only screen and (max-width: $width) { @content; }
+}
+
+@mixin width-over($width) {
+	@media only screen and (min-width: $width) { @content; }
+}
+
+@mixin width-between($low, $high) {
+	@if ($high < $low) {
+		$temp : $high;
+		$high : $low;
+		$low : $temp;
+	}
+	@media only screen and (min-width: $low) and (max-width: $high) { @content; }
+}
+
+@mixin height-under($height) {
+	@media only screen and (max-height: $height) { @content; }
+}
+
+@mixin height-over($height) {
+	@media only screen and (min-height: $height) { @content; }
+}
+
+@mixin height-between($low, $high) {
+	@if ($high < $low) {
+		$temp : $high;
+		$high : $low;
+		$low : $temp;
+	}
+	@media only screen and (min-height: $low) and (max-height: $high) { @content; }
+}
+
+//  phone  |  tablet  |  desktop  //
+//  phone-and-tablet  |           //
+//  tablet-and-phone  |           //
+//         |  tablet-and-desktop  //
+//         |  desktop-and-tablet  //
+
+@mixin phone {
+	@include width-under(320px) { @content; }
+}
+
+@mixin phone-and-tablet {
+	@include width-under(768px) { @content; }
+}
+
+@mixin tablet-and-phone {
+	@include width-under(768px) { @content; }
+}
+
+@mixin tablet {
+	@include width-between(321px, 768px) { @content; }
+}
+
+@mixin tablet-and-desktop {
+	@include width-over(321px) { @content; }
+}
+
+@mixin desktop-and-tablet {
+	@include width-over(321px) { @content; }
+}
+
+@mixin desktop {
+	@include width-over(769px) { @content; }
+}
