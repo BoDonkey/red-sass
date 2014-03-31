@@ -18,7 +18,7 @@ Import RED-Sass into your `scss` files.
 
 ## Mixins
 
-### Media Queries
+### Generic Media Queries
 
 ```scss
 @include width-over($w) {}
@@ -31,8 +31,55 @@ Import RED-Sass into your `scss` files.
 
 [source](mixins/_media-queries.scss)
 
+Wraps content in a media query.
+
+```scss
+// scss
+body {
+  @include width-under(400px)          { color: red; }
+  @include width-over(600px)           { color: white; }
+  @include width-between(400px, 600px) { color: black; }
+}
+
+// css
+@media only screen and (max-width: 400px) {
+  body { color: red; }
+}
+@media only screen and (min-width: 600px) {
+  body { color: white; }
+}
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+  body { color: black; }
+}
+```
+
+### Named Device Media Queries
 
 
+
+```scss
+@include phone {}              // width under 320px
+@include phone-and-tablet {}   // width under 768px
+@include tablet-and-phone {}   // width under 768px
+@include tablet {}             // width between 321px and 768px
+@include tablet-and-desktop {} // width over 321px
+@include desktop-and-tablet {} // width over 321px
+@include desktop {}            // width over 769px
+```
+
+These map to the following breakpoints.
+
+```
+0        320        768          ∞
+|  phone  |  tablet  |  desktop  |
+|         |          |           |
+|  phone-and-tablet  |           |
+|  tablet-and-phone  |           |
+|         |          |           |
+|         |  tablet-and-desktop  |
+|         |  desktop-and-tablet  |
+0        320        768          ∞
+```
 
 ### Debug
 
@@ -80,18 +127,17 @@ div { animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
 
 Available timing functions:
 
-```
-              in               out               in-out
-      * -------------- * --------------- * ------------------ *
- quad | $ease-in-quad  | $ease-out-quad  | $ease-in-out-quad  |
-cubic | $ease-in-cubic | $ease-out-cubic | $ease-in-out-cubic |
-quart | $ease-in-quart | $ease-out-quart | $ease-in-out-quart |
-quint | $ease-in-quint | $ease-out-quint | $ease-in-out-quint |
- sine | $ease-in-sine  | $ease-out-sine  | $ease-in-out-sine  |
- expo | $ease-in-expo  | $ease-out-expo  | $ease-in-out-expo  |
- circ | $ease-in-circ  | $ease-out-circ  | $ease-in-out-circ  |
-      * -------------- * --------------- * ------------------ *
-```
+
+|       | in               | out               | in-out               |
+| -     | -                | -                 | -                    |
+|  quad | `$ease-in-quad`  | `$ease-out-quad`  | `$ease-in-out-quad`  |
+| cubic | `$ease-in-cubic` | `$ease-out-cubic` | `$ease-in-out-cubic` |
+| quart | `$ease-in-quart` | `$ease-out-quart` | `$ease-in-out-quart` |
+| quint | `$ease-in-quint` | `$ease-out-quint` | `$ease-in-out-quint` |
+|  sine | `$ease-in-sine`  | `$ease-out-sine`  | `$ease-in-out-sine`  |
+|  expo | `$ease-in-expo`  | `$ease-out-expo`  | `$ease-in-out-expo`  |
+|  circ | `$ease-in-circ`  | `$ease-out-circ`  | `$ease-in-out-circ`  |
+
 
 ### Ellipsis
 
