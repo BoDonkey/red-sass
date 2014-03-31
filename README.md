@@ -129,7 +129,7 @@ Available timing functions:
 
 
 |       | in               | out               | in-out               |
-| -     | -                | -                 | -                    |
+| ----- | ---------------- | ----------------- | -------------------- |
 |  quad | `$ease-in-quad`  | `$ease-out-quad`  | `$ease-in-out-quad`  |
 | cubic | `$ease-in-cubic` | `$ease-out-cubic` | `$ease-in-out-cubic` |
 | quart | `$ease-in-quart` | `$ease-out-quart` | `$ease-in-out-quart` |
