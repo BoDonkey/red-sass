@@ -37,9 +37,13 @@ function test(name, done) {
 	sass.render({
 		file: path.join(__dirname, 'fixtures', name),
 		includePaths: [path.join(__dirname, '../..')],
-		outputStyle: 'compact',
-		success: success.bind(null, name, done),
-		error: error.bind(null, done)
+		outputStyle: 'nested'
+	}, function (err, result) {
+		if (err) {
+			return error(done, err);
+		}
+		var src = result.css.toString();
+		success(name, done, src);
 	});
 }
 

@@ -6,20 +6,31 @@
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box; }
-article, aside, details, summary, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+article, aside, details,
+summary, figcaption, figure,
+footer, header, hgroup,
+menu, nav, section {
   display: block; }
+
 body {
   line-height: 1; }
+
 ol, ul {
   list-style: none; }
+
 blockquote, q {
   quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
+
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
 .context * {
   margin: 0;
   padding: 0;
@@ -28,17 +39,27 @@ table {
   font: inherit;
   vertical-align: baseline;
   box-sizing: border-box; }
-.context article, .context aside, .context details, .context summary, .context figcaption, .context figure, .context footer, .context header, .context hgroup, .context menu, .context nav, .context section {
+
+.context article, .context aside, .context details,
+.context summary, .context figcaption, .context figure,
+.context footer, .context header, .context hgroup,
+.context menu, .context nav, .context section {
   display: block; }
+
 .context body {
   line-height: 1; }
+
 .context ol, .context ul {
   list-style: none; }
+
 .context blockquote, .context q {
   quotes: none; }
-.context blockquote:before, .context blockquote:after, .context q:before, .context q:after {
+
+.context blockquote:before, .context blockquote:after,
+.context q:before, .context q:after {
   content: '';
   content: none; }
+
 .context table {
   border-collapse: collapse;
   border-spacing: 0; }

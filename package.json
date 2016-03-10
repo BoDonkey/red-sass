@@ -1,14 +1,36 @@
 {
   "name": "red-sass",
   "description": "RED Interactive's collection of Sass mixins and helpers.",
-  "version": "0.2.0",
-  "private": true,
+  "version": "0.2.1",
+  "keywords": [
+    "sass",
+    "scss",
+    "reset",
+    "red"
+  ],
+  "homepage": "https://github.com/ff0000/red-sass",
+  "bugs": "https://github.com/ff0000/red-sass/issues",
+  "author": {
+    "name": "RED Interactive Agency",
+    "email": "",
+    "url": "https://github.com/ff0000"
+  },
+  "main": "_red-sass.scss",
   "devDependencies": {
-    "glob": "~3.2.8",
-    "node-sass": "~0.8.1",
-    "mocha": "~1.17.1"
+    "glob": "~7.0.3",
+    "node-sass": "~3.4.2",
+    "mocha": "~2.4.5"
   },
   "scripts": {
     "test": "mocha -R spec"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ff0000/red-sass.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
 }

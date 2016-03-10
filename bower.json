@@ -1,6 +1,6 @@
 {
 	"name": "red-sass",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "RED Interactive's collection of Sass mixins and helpers.",
 	"keywords": [
 		"sass",
